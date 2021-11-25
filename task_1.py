@@ -23,10 +23,6 @@ while repeat == 'y':
         result = first_num * second_num
     elif operation == '/':
         result = first_num / second_num
-    else:
-        print('something wrong')
-        repeat = input('try again? |y/n|: ')
-        continue
 
     print(first_num, operation, second_num, '=', result)
     repeat = input('try again? |y/n|: ')
