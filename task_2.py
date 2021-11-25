@@ -1,2 +1,5 @@
-#time
-# 2. Пользователь вводит время в секундах. Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс. Используйте форматирование строк.
+# time
+time_in_seconds = int(input('Enter tome in seconds: '))
+if time_in_seconds <= 86400:
+    time = f'{time_in_seconds//3600:02}:{time_in_seconds // 60 % 60:02}:{time_in_seconds % 60:02}'
+    print(f'time {time}.')
