@@ -15,6 +15,9 @@ while repeat == 'y':
     first_num = int(input(f'input first num, (#) {operation} #: '))
     second_num = int(input(f'input second num, {first_num} {operation} (#): '))
 
+    # result can be undefined so we need this
+    result = 'NaN'
+
     if operation == '+':
         result = first_num + second_num
     elif operation == '-':
