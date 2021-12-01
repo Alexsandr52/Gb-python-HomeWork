@@ -1,16 +1,21 @@
+winter = 'winter'
+spring = 'spring'
+summer = 'summer'
+autumn = 'autumn'
+
 months = {
-    1: 'January',
-    2: 'February',
-    3: 'March',
-    4: 'April',
-    5: 'Мay',
-    6: 'June',
-    7: 'July',
-    8: 'August',
-    9: 'September',
-    10: 'October',
-    11: 'November',
-    12: 'December'
+    1: winter,
+    2: winter,
+    3: spring,
+    4: spring,
+    5: spring,
+    6: summer,
+    7: summer,
+    8: summer,
+    9: autumn,
+    10: autumn,
+    11: autumn,
+    12: winter
 }
 user_input = int(input('Enter number of month: '))
 
