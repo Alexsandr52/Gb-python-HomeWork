@@ -16,3 +16,31 @@
 # “количество”: [5, 2, 7],
 # “ед”: [“шт.”]
 # }
+production = []
+index = 1
+user_input = ''
+while user_input != 'stop':
+    name = input('Enter name of prod: ')
+    prise = input('Enter prise: ')
+    quantity = input('Enter the quantity: ')
+    units = input('Enter the unit: ')
+
+    production.append(
+        (index, { 'name': name, 'prise': prise, 'quantity': quantity, 'units': units})
+    )
+    
+    index += 1
+    user_input = input('Enter \'stop\' to continue: ')
+
+print(production)
+
+production_dict = {}
+
+for indx, lokal_dict in production:
+    for key, value in lokal_dict.items():
+        if not production_dict.get(key):
+            production_dict[key] = value
+        else:
+            production_dict[key].append(value)
+
+print(production_dict)
