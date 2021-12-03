@@ -1,4 +1,3 @@
-
 my_list = [7, 5, 3, 3, 2]
 user_input = int(input('Enter your number: '))
 examination = False
