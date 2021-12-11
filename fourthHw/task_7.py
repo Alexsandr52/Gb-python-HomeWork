@@ -6,4 +6,3 @@ def fact(n):
 
 factorials = [el for el in fact(4)]
 print(factorials)
-
