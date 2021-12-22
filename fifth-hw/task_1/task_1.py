@@ -1,5 +1,4 @@
 with open('fifth-hw/task_1/userfile.txt', 'w') as user_file:
-    user_input = ''
     while True:
         user_input = input('Enter your str: ')
         if len(user_input.split()) == 0:
