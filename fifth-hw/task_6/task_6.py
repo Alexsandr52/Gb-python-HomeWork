@@ -11,3 +11,4 @@ with open('fifth-hw/task_6/task_6.txt', encoding='utf-8') as file:
             sum_of_hours += int(number)
         results.update({line[0].strip(':'): sum_of_hours})
     print(results)
+    
